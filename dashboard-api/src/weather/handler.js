@@ -14,7 +14,7 @@ exports.handler = async(event) => {
 	
 	response = {
 		statusCode: 200,
-		body: "successful"
+		body: "this was successful"
 	}
 
 	return (response);
