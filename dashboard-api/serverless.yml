@@ -15,6 +15,7 @@ package:
 functions:
   getWeather:
     handler: /src/weather/weather.handler
+    memorySize: 256
     events:
       - httpApi:
           path: /weather
