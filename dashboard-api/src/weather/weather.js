@@ -12,10 +12,10 @@ exports.handler = async(event) => {
 		body: "something went wrong",
 	};
 	
-	response = {
-		statusCode: 200,
-		body: "this was successful"
-	}
+	
+	response.statusCode = 200
+	response.body =  "this was successful"
+	
 
-	return (response);
+	return (JSON.parse(response));
 };
