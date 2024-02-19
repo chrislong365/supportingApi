@@ -1,0 +1,21 @@
+org: chrislong365
+app: dashboard-api
+service: dashboard-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-west-2
+
+package:
+  individually: true
+
+functions:
+  getWeather:
+    handler: /src/weather/weather.handler
+    events:
+      - httpApi:
+          path: /weather
+          method: get
