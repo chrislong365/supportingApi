@@ -17,5 +17,5 @@ exports.handler = async(event) => {
 	response.body =  "this was successful"
 	
 
-	return (JSON.parse(response));
+	return (JSON.stringify(response));
 };
