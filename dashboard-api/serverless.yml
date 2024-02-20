@@ -16,7 +16,10 @@ functions:
   getWeather:
     handler: /src/weather/weather.handler
     memorySize: 256
+    environment:
+      ACCUWEATHER_KEY: ${param:ACCUWEATHER_KEY}
     events:
       - httpApi:
           path: /weather
           method: get
+        
